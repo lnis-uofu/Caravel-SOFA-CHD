@@ -1,5 +1,5 @@
 
-Magic 8.3 revision 87 - Compiled on Tue Dec  8 20:37:11 UTC 2020.
+Magic 8.3 revision 93 - Compiled on Thu Dec 17 06:44:37 UTC 2020.
 Starting magic under Tcl interpreter
 Using the terminal as the console.
 Using NULL graphics device.
@@ -20,51 +20,9 @@ caravel: 70000 rects
 caravel: 80000 rects
 [INFO]: Loading caravel
 
-"noduplicates" isn't a valid gds option.
-GDS commands have the form ":gds option", where option is one of:
-    help		print this help information
-    addendum [yes|no]	output only cells that are not type "readonly"
-    arrays [yes|no]	output arrays as individual subuses (like in CIF)
-    contacts [yes|no]	optimize output by arraying contacts as subcells
-    drccheck [yes|no]	mark all cells as needing DRC checking
-    flatten [yes|no|limit]	flatten simple cells (e.g., contacts) on input
-    ordering [on|off]	cause cells to be read in post-order
-    labels [yes|no]	cause labels to be output when writing GDS-II
-    library [yes|no]	do not output the top level, only subcells
-    lower [yes|no]		allow both upper and lower case in labels
-    merge [yes|no]		merge tiles into polygons in the output
-    read file		read Calma GDS-II format from "file"
-		into edit cell
-    readonly [yes|no]	set cell as read-only and generate output from GDS file
-    rescale [yes|no]	allow or disallow internal grid subdivision
-    warning [option]	set warning information level
-    write file		output Calma GDS-II format to "file"
-		for the window's root cell
-    polygon subcells [yes|no]
-		put non-Manhattan polygons into subcells
-    path subcells [yes|no]
-		put wire paths into individual subcells
-If no option is given, a CALMA GDS-II stream file is
-    produced for the root cell.
-The current CIF output style ("cif ostyle") is used
-    to select the mask layers output by :gds write.
-The current CIF input style ("cif istyle") is used
-    to select the mask layers read by :gds read.
 Warning: Calma reading is not undoable!  I hope that's OK.
 Library written using GDS-II Release 3.0
 Library name: user_project_wrapper
-Reading "sky130_fd_sc_hd__buf_4".
-Error while reading cell "sky130_fd_sc_hd__buf_4" (byte position 148): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__clkbuf_1".
-Error while reading cell "sky130_fd_sc_hd__clkbuf_1" (byte position 5560): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__inv_2".
-Error while reading cell "sky130_fd_sc_hd__inv_2" (byte position 9370): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__buf_2".
-Error while reading cell "sky130_fd_sc_hd__buf_2" (byte position 13178): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__conb_1".
-Error while reading cell "sky130_fd_sc_hd__conb_1" (byte position 17676): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__fill_2".
-Reading "sky130_fd_sc_hd__fill_1".
 Reading "$$M1M2_PR_C".
 Reading "$$M3M4_PR_C".
 Reading "$$L1M1_PR_C".
@@ -73,41 +31,53 @@ Reading "$$M3M4_PR".
 Reading "$$M2M3_PR".
 Reading "$$M1M2_PR".
 Reading "$$M4M5_PR_16000_16000_2_1".
+Reading "sky130_fd_sc_hd__fill_2".
 Reading "sky130_fd_sc_hd__fill_8".
 Reading "sky130_fd_sc_hd__fill_4".
+Reading "sky130_fd_sc_hd__fill_1".
 Reading "sky130_fd_sc_hd__buf_1".
-Error while reading cell "sky130_fd_sc_hd__buf_1" (byte position 29598): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__buf_1" (byte position 8706): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__clkbuf_1".
+Error while reading cell "sky130_fd_sc_hd__clkbuf_1" (byte position 12678): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__buf_6".
-Error while reading cell "sky130_fd_sc_hd__buf_6" (byte position 33566): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__buf_6" (byte position 16488): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__bufbuf_16".
-Error while reading cell "sky130_fd_sc_hd__bufbuf_16" (byte position 40608): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__bufbuf_16" (byte position 23530): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__buf_4".
+Error while reading cell "sky130_fd_sc_hd__buf_4" (byte position 41792): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__buf_8".
-Error while reading cell "sky130_fd_sc_hd__buf_8" (byte position 58870): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__buf_8" (byte position 47200): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__buf_2".
+Error while reading cell "sky130_fd_sc_hd__buf_2" (byte position 56092): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__dfrtp_1".
-Error while reading cell "sky130_fd_sc_hd__dfrtp_1" (byte position 67764): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__dfrtp_1" (byte position 60590): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_uuopenfpga_cc_hd_invmux3_1".
 Reading "sky130_fd_sc_hd__nor2_1".
-Error while reading cell "sky130_fd_sc_hd__nor2_1" (byte position 97810): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__nor2_1" (byte position 90636): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__clkinv_1".
-Error while reading cell "sky130_fd_sc_hd__clkinv_1" (byte position 101480): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__clkinv_1" (byte position 94306): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__nand2_1".
-Error while reading cell "sky130_fd_sc_hd__nand2_1" (byte position 105316): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__nand2_1" (byte position 98142): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__inv_1".
-Error while reading cell "sky130_fd_sc_hd__inv_1" (byte position 109268): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__inv_1" (byte position 102094): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__sdfrtp_1".
-Error while reading cell "sky130_fd_sc_hd__sdfrtp_1" (byte position 112826): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__sdfrtp_1" (byte position 105652): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__mux2_1".
-Error while reading cell "sky130_fd_sc_hd__mux2_1" (byte position 131716): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__mux2_1" (byte position 124542): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__or2_0".
-Error while reading cell "sky130_fd_sc_hd__or2_0" (byte position 138604): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__or2_0" (byte position 131430): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__inv_8".
-Error while reading cell "sky130_fd_sc_hd__inv_8" (byte position 142558): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__inv_8" (byte position 135384): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__inv_2".
+Error while reading cell "sky130_fd_sc_hd__inv_2" (byte position 142944): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__dlygate4sd1_1".
-Error while reading cell "sky130_fd_sc_hd__dlygate4sd1_1" (byte position 150126): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__dlygate4sd1_1" (byte position 146760): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__dlygate4sd3_1".
-Error while reading cell "sky130_fd_sc_hd__dlygate4sd3_1" (byte position 155596): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__dlygate4sd3_1" (byte position 152230): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_fd_sc_hd__clkbuf_8".
-Error while reading cell "sky130_fd_sc_hd__clkbuf_8" (byte position 161580): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__clkbuf_8" (byte position 158214): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__conb_1".
+Error while reading cell "sky130_fd_sc_hd__conb_1" (byte position 166018): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "grid_clb".
     100 uses
     200 uses
@@ -210,8 +180,54 @@ CIF file read warning: CIF style sky130: units rescaled by factor of 5 / 1
     9800 uses
 Reading "sky130_fd_sc_hd__mux2_2".
 Error while reading cell "sky130_fd_sc_hd__mux2_2" (byte position 923982): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sb_0__0_".
+    100 uses
+    200 uses
+    300 uses
+    400 uses
+    500 uses
+    600 uses
+    700 uses
+    800 uses
+    900 uses
+    1000 uses
+    1100 uses
+    1200 uses
+    1300 uses
+    1400 uses
+    1500 uses
+    1600 uses
+    1700 uses
+    1800 uses
+    1900 uses
+    2000 uses
+    2100 uses
+    2200 uses
+    2300 uses
+    2400 uses
+    2500 uses
+    2600 uses
+    2700 uses
+    2800 uses
+    2900 uses
+    3000 uses
+    3100 uses
+    3200 uses
+    3300 uses
+    3400 uses
+    3500 uses
+    3600 uses
+    3700 uses
+    3800 uses
+    3900 uses
+    4000 uses
+    4100 uses
+    4200 uses
+    4300 uses
+    4400 uses
+    4500 uses
 Reading "sky130_fd_sc_hd__dlygate4sd2_1".
-Error while reading cell "sky130_fd_sc_hd__dlygate4sd2_1" (byte position 931240): Unknown layer/datatype in boundary, layer=236 type=0
+Error while reading cell "sky130_fd_sc_hd__dlygate4sd2_1" (byte position 1285714): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sky130_uuopenfpga_cc_hd_invmux2_1".
 Reading "sb_0__1_".
     100 uses
@@ -308,6 +324,166 @@ Reading "sb_0__1_".
     9200 uses
     9300 uses
     9400 uses
+Reading "sky130_fd_sc_hd__inv_6".
+Error while reading cell "sky130_fd_sc_hd__inv_6" (byte position 2078114): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sb_0__2_".
+    100 uses
+    200 uses
+    300 uses
+    400 uses
+    500 uses
+    600 uses
+    700 uses
+    800 uses
+    900 uses
+    1000 uses
+    1100 uses
+    1200 uses
+    1300 uses
+    1400 uses
+    1500 uses
+    1600 uses
+    1700 uses
+    1800 uses
+    1900 uses
+    2000 uses
+    2100 uses
+    2200 uses
+    2300 uses
+    2400 uses
+    2500 uses
+    2600 uses
+    2700 uses
+    2800 uses
+    2900 uses
+    3000 uses
+    3100 uses
+    3200 uses
+    3300 uses
+    3400 uses
+    3500 uses
+    3600 uses
+    3700 uses
+    3800 uses
+    3900 uses
+    4000 uses
+    4100 uses
+    4200 uses
+    4300 uses
+    4400 uses
+    4500 uses
+    4600 uses
+Reading "sb_1__0_".
+    100 uses
+    200 uses
+    300 uses
+    400 uses
+    500 uses
+    600 uses
+    700 uses
+    800 uses
+    900 uses
+    1000 uses
+    1100 uses
+    1200 uses
+    1300 uses
+    1400 uses
+    1500 uses
+    1600 uses
+    1700 uses
+    1800 uses
+    1900 uses
+    2000 uses
+    2100 uses
+    2200 uses
+    2300 uses
+    2400 uses
+    2500 uses
+    2600 uses
+    2700 uses
+    2800 uses
+    2900 uses
+    3000 uses
+    3100 uses
+    3200 uses
+    3300 uses
+    3400 uses
+    3500 uses
+    3600 uses
+    3700 uses
+    3800 uses
+    3900 uses
+    4000 uses
+    4100 uses
+    4200 uses
+    4300 uses
+    4400 uses
+    4500 uses
+    4600 uses
+    4700 uses
+    4800 uses
+    4900 uses
+    5000 uses
+    5100 uses
+    5200 uses
+    5300 uses
+    5400 uses
+    5500 uses
+    5600 uses
+    5700 uses
+    5800 uses
+    5900 uses
+    6000 uses
+    6100 uses
+    6200 uses
+    6300 uses
+    6400 uses
+    6500 uses
+    6600 uses
+    6700 uses
+    6800 uses
+    6900 uses
+    7000 uses
+    7100 uses
+    7200 uses
+    7300 uses
+    7400 uses
+    7500 uses
+    7600 uses
+    7700 uses
+    7800 uses
+    7900 uses
+    8000 uses
+    8100 uses
+    8200 uses
+    8300 uses
+    8400 uses
+    8500 uses
+    8600 uses
+    8700 uses
+    8800 uses
+    8900 uses
+    9000 uses
+    9100 uses
+    9200 uses
+    9300 uses
+    9400 uses
+    9500 uses
+    9600 uses
+    9700 uses
+    9800 uses
+    9900 uses
+    10000 uses
+    10100 uses
+    10200 uses
+    10300 uses
+    10400 uses
+    10500 uses
+    10600 uses
+    10700 uses
+    10800 uses
+    10900 uses
+    11000 uses
 Reading "sb_1__1_".
     100 uses
     200 uses
@@ -467,597 +643,8 @@ Reading "sb_1__1_".
     15600 uses
     15700 uses
     15800 uses
-Reading "cbx_1__1_".
-    100 uses
-    200 uses
-    300 uses
-    400 uses
-    500 uses
-    600 uses
-    700 uses
-    800 uses
-    900 uses
-    1000 uses
-    1100 uses
-    1200 uses
-    1300 uses
-    1400 uses
-    1500 uses
-    1600 uses
-    1700 uses
-    1800 uses
-    1900 uses
-    2000 uses
-    2100 uses
-    2200 uses
-    2300 uses
-    2400 uses
-    2500 uses
-    2600 uses
-    2700 uses
-    2800 uses
-    2900 uses
-    3000 uses
-    3100 uses
-    3200 uses
-    3300 uses
-    3400 uses
-    3500 uses
-    3600 uses
-    3700 uses
-    3800 uses
-    3900 uses
-    4000 uses
-    4100 uses
-    4200 uses
-    4300 uses
-    4400 uses
-    4500 uses
-    4600 uses
-    4700 uses
-    4800 uses
-    4900 uses
-    5000 uses
-    5100 uses
-    5200 uses
-    5300 uses
-    5400 uses
-    5500 uses
-    5600 uses
-    5700 uses
-    5800 uses
-    5900 uses
-    6000 uses
-    6100 uses
-    6200 uses
-    6300 uses
-    6400 uses
-    6500 uses
-    6600 uses
-    6700 uses
-    6800 uses
-    6900 uses
-    7000 uses
-    7100 uses
-    7200 uses
-Reading "sky130_fd_sc_hd__ebufn_4".
-Error while reading cell "sky130_fd_sc_hd__ebufn_4" (byte position 3744044): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__nand2b_1".
-Error while reading cell "sky130_fd_sc_hd__nand2b_1" (byte position 3753554): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "cbx_1__2_".
-    100 uses
-    200 uses
-    300 uses
-    400 uses
-    500 uses
-    600 uses
-    700 uses
-    800 uses
-    900 uses
-    1000 uses
-    1100 uses
-    1200 uses
-    1300 uses
-    1400 uses
-    1500 uses
-    1600 uses
-    1700 uses
-    1800 uses
-    1900 uses
-    2000 uses
-    2100 uses
-    2200 uses
-    2300 uses
-    2400 uses
-    2500 uses
-    2600 uses
-    2700 uses
-    2800 uses
-    2900 uses
-    3000 uses
-    3100 uses
-    3200 uses
-    3300 uses
-    3400 uses
-    3500 uses
-    3600 uses
-    3700 uses
-    3800 uses
-    3900 uses
-    4000 uses
-    4100 uses
-    4200 uses
-    4300 uses
-    4400 uses
-    4500 uses
-    4600 uses
-    4700 uses
-    4800 uses
-    4900 uses
-    5000 uses
-    5100 uses
-    5200 uses
-    5300 uses
-    5400 uses
-    5500 uses
-    5600 uses
-    5700 uses
-    5800 uses
-    5900 uses
-    6000 uses
-    6100 uses
-    6200 uses
-    6300 uses
-    6400 uses
-    6500 uses
-    6600 uses
-    6700 uses
-    6800 uses
-    6900 uses
-    7000 uses
-    7100 uses
-    7200 uses
-    7300 uses
-    7400 uses
-    7500 uses
-Reading "sky130_fd_sc_hd__inv_4".
-Error while reading cell "sky130_fd_sc_hd__inv_4" (byte position 4403880): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "cby_0__1_".
-    100 uses
-    200 uses
-    300 uses
-    400 uses
-    500 uses
-    600 uses
-    700 uses
-    800 uses
-    900 uses
-    1000 uses
-    1100 uses
-    1200 uses
-    1300 uses
-    1400 uses
-    1500 uses
-    1600 uses
-    1700 uses
-    1800 uses
-    1900 uses
-    2000 uses
-    2100 uses
-    2200 uses
-Reading "sky130_fd_sc_hd__inv_6".
-Error while reading cell "sky130_fd_sc_hd__inv_6" (byte position 4588988): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__or2b_4".
-Error while reading cell "sky130_fd_sc_hd__or2b_4" (byte position 4595000): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "cbx_1__0_".
-    100 uses
-    200 uses
-    300 uses
-    400 uses
-    500 uses
-    600 uses
-    700 uses
-    800 uses
-    900 uses
-    1000 uses
-    1100 uses
-    1200 uses
-    1300 uses
-    1400 uses
-    1500 uses
-    1600 uses
-    1700 uses
-    1800 uses
-    1900 uses
-    2000 uses
-    2100 uses
-    2200 uses
-    2300 uses
-    2400 uses
-    2500 uses
-    2600 uses
-    2700 uses
-    2800 uses
-    2900 uses
-    3000 uses
-    3100 uses
-    3200 uses
-    3300 uses
-    3400 uses
-    3500 uses
-    3600 uses
-    3700 uses
-    3800 uses
-    3900 uses
-    4000 uses
-    4100 uses
-    4200 uses
-    4300 uses
-    4400 uses
-    4500 uses
-    4600 uses
-    4700 uses
-    4800 uses
-    4900 uses
-    5000 uses
-    5100 uses
-    5200 uses
-    5300 uses
-    5400 uses
-    5500 uses
-    5600 uses
 Reading "sky130_fd_sc_hd__bufbuf_8".
-Error while reading cell "sky130_fd_sc_hd__bufbuf_8" (byte position 5080704): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "cby_1__1_".
-    100 uses
-    200 uses
-    300 uses
-    400 uses
-    500 uses
-    600 uses
-    700 uses
-    800 uses
-    900 uses
-    1000 uses
-    1100 uses
-    1200 uses
-    1300 uses
-    1400 uses
-    1500 uses
-    1600 uses
-    1700 uses
-    1800 uses
-    1900 uses
-    2000 uses
-    2100 uses
-    2200 uses
-    2300 uses
-    2400 uses
-    2500 uses
-    2600 uses
-    2700 uses
-    2800 uses
-    2900 uses
-    3000 uses
-    3100 uses
-    3200 uses
-    3300 uses
-    3400 uses
-    3500 uses
-    3600 uses
-    3700 uses
-    3800 uses
-    3900 uses
-    4000 uses
-    4100 uses
-    4200 uses
-    4300 uses
-    4400 uses
-    4500 uses
-    4600 uses
-    4700 uses
-    4800 uses
-    4900 uses
-    5000 uses
-    5100 uses
-    5200 uses
-    5300 uses
-    5400 uses
-    5500 uses
-    5600 uses
-    5700 uses
-    5800 uses
-    5900 uses
-    6000 uses
-    6100 uses
-    6200 uses
-    6300 uses
-    6400 uses
-    6500 uses
-    6600 uses
-    6700 uses
-    6800 uses
-    6900 uses
-    7000 uses
-Reading "cby_2__1_".
-    100 uses
-    200 uses
-    300 uses
-    400 uses
-    500 uses
-    600 uses
-    700 uses
-    800 uses
-    900 uses
-    1000 uses
-    1100 uses
-    1200 uses
-    1300 uses
-    1400 uses
-    1500 uses
-    1600 uses
-    1700 uses
-    1800 uses
-    1900 uses
-    2000 uses
-    2100 uses
-    2200 uses
-    2300 uses
-    2400 uses
-    2500 uses
-    2600 uses
-    2700 uses
-    2800 uses
-    2900 uses
-    3000 uses
-    3100 uses
-    3200 uses
-    3300 uses
-    3400 uses
-    3500 uses
-    3600 uses
-    3700 uses
-    3800 uses
-    3900 uses
-    4000 uses
-    4100 uses
-    4200 uses
-    4300 uses
-    4400 uses
-    4500 uses
-    4600 uses
-    4700 uses
-    4800 uses
-    4900 uses
-    5000 uses
-    5100 uses
-    5200 uses
-    5300 uses
-    5400 uses
-    5500 uses
-    5600 uses
-    5700 uses
-    5800 uses
-    5900 uses
-    6000 uses
-    6100 uses
-    6200 uses
-    6300 uses
-    6400 uses
-    6500 uses
-    6600 uses
-    6700 uses
-    6800 uses
-    6900 uses
-    7000 uses
-    7100 uses
-    7200 uses
-    7300 uses
-    7400 uses
-Reading "sb_0__0_".
-    100 uses
-    200 uses
-    300 uses
-    400 uses
-    500 uses
-    600 uses
-    700 uses
-    800 uses
-    900 uses
-    1000 uses
-    1100 uses
-    1200 uses
-    1300 uses
-    1400 uses
-    1500 uses
-    1600 uses
-    1700 uses
-    1800 uses
-    1900 uses
-    2000 uses
-    2100 uses
-    2200 uses
-    2300 uses
-    2400 uses
-    2500 uses
-    2600 uses
-    2700 uses
-    2800 uses
-    2900 uses
-    3000 uses
-    3100 uses
-    3200 uses
-    3300 uses
-    3400 uses
-    3500 uses
-    3600 uses
-    3700 uses
-    3800 uses
-    3900 uses
-    4000 uses
-    4100 uses
-    4200 uses
-    4300 uses
-    4400 uses
-    4500 uses
-Reading "sb_0__2_".
-    100 uses
-    200 uses
-    300 uses
-    400 uses
-    500 uses
-    600 uses
-    700 uses
-    800 uses
-    900 uses
-    1000 uses
-    1100 uses
-    1200 uses
-    1300 uses
-    1400 uses
-    1500 uses
-    1600 uses
-    1700 uses
-    1800 uses
-    1900 uses
-    2000 uses
-    2100 uses
-    2200 uses
-    2300 uses
-    2400 uses
-    2500 uses
-    2600 uses
-    2700 uses
-    2800 uses
-    2900 uses
-    3000 uses
-    3100 uses
-    3200 uses
-    3300 uses
-    3400 uses
-    3500 uses
-    3600 uses
-    3700 uses
-    3800 uses
-    3900 uses
-    4000 uses
-    4100 uses
-    4200 uses
-    4300 uses
-    4400 uses
-    4500 uses
-    4600 uses
-Reading "sb_1__0_".
-    100 uses
-    200 uses
-    300 uses
-    400 uses
-    500 uses
-    600 uses
-    700 uses
-    800 uses
-    900 uses
-    1000 uses
-    1100 uses
-    1200 uses
-    1300 uses
-    1400 uses
-    1500 uses
-    1600 uses
-    1700 uses
-    1800 uses
-    1900 uses
-    2000 uses
-    2100 uses
-    2200 uses
-    2300 uses
-    2400 uses
-    2500 uses
-    2600 uses
-    2700 uses
-    2800 uses
-    2900 uses
-    3000 uses
-    3100 uses
-    3200 uses
-    3300 uses
-    3400 uses
-    3500 uses
-    3600 uses
-    3700 uses
-    3800 uses
-    3900 uses
-    4000 uses
-    4100 uses
-    4200 uses
-    4300 uses
-    4400 uses
-    4500 uses
-    4600 uses
-    4700 uses
-    4800 uses
-    4900 uses
-    5000 uses
-    5100 uses
-    5200 uses
-    5300 uses
-    5400 uses
-    5500 uses
-    5600 uses
-    5700 uses
-    5800 uses
-    5900 uses
-    6000 uses
-    6100 uses
-    6200 uses
-    6300 uses
-    6400 uses
-    6500 uses
-    6600 uses
-    6700 uses
-    6800 uses
-    6900 uses
-    7000 uses
-    7100 uses
-    7200 uses
-    7300 uses
-    7400 uses
-    7500 uses
-    7600 uses
-    7700 uses
-    7800 uses
-    7900 uses
-    8000 uses
-    8100 uses
-    8200 uses
-    8300 uses
-    8400 uses
-    8500 uses
-    8600 uses
-    8700 uses
-    8800 uses
-    8900 uses
-    9000 uses
-    9100 uses
-    9200 uses
-    9300 uses
-    9400 uses
-    9500 uses
-    9600 uses
-    9700 uses
-    9800 uses
-    9900 uses
-    10000 uses
-    10100 uses
-    10200 uses
-    10300 uses
-    10400 uses
-    10500 uses
-    10600 uses
-    10700 uses
-    10800 uses
-    10900 uses
-    11000 uses
+Error while reading cell "sky130_fd_sc_hd__bufbuf_8" (byte position 4743568): Unknown layer/datatype in boundary, layer=236 type=0
 Reading "sb_1__2_".
     100 uses
     200 uses
@@ -1402,7 +989,389 @@ Reading "sb_2__2_".
     6200 uses
     6300 uses
     6400 uses
-Reading "sky130_fd_sc_hd__tapvpwrvgnd_1".
+Reading "sky130_fd_sc_hd__inv_4".
+Error while reading cell "sky130_fd_sc_hd__inv_4" (byte position 7506942): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__ebufn_4".
+Error while reading cell "sky130_fd_sc_hd__ebufn_4" (byte position 7511994): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__nand2b_1".
+Error while reading cell "sky130_fd_sc_hd__nand2b_1" (byte position 7521504): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "sky130_fd_sc_hd__or2b_4".
+Error while reading cell "sky130_fd_sc_hd__or2b_4" (byte position 7526096): Unknown layer/datatype in boundary, layer=236 type=0
+Reading "cbx_1__0_".
+    100 uses
+    200 uses
+    300 uses
+    400 uses
+    500 uses
+    600 uses
+    700 uses
+    800 uses
+    900 uses
+    1000 uses
+    1100 uses
+    1200 uses
+    1300 uses
+    1400 uses
+    1500 uses
+    1600 uses
+    1700 uses
+    1800 uses
+    1900 uses
+    2000 uses
+    2100 uses
+    2200 uses
+    2300 uses
+    2400 uses
+    2500 uses
+    2600 uses
+    2700 uses
+    2800 uses
+    2900 uses
+    3000 uses
+    3100 uses
+    3200 uses
+    3300 uses
+    3400 uses
+    3500 uses
+    3600 uses
+    3700 uses
+    3800 uses
+    3900 uses
+    4000 uses
+    4100 uses
+    4200 uses
+    4300 uses
+    4400 uses
+    4500 uses
+    4600 uses
+    4700 uses
+    4800 uses
+    4900 uses
+    5000 uses
+    5100 uses
+    5200 uses
+    5300 uses
+    5400 uses
+    5500 uses
+    5600 uses
+Reading "cbx_1__1_".
+    100 uses
+    200 uses
+    300 uses
+    400 uses
+    500 uses
+    600 uses
+    700 uses
+    800 uses
+    900 uses
+    1000 uses
+    1100 uses
+    1200 uses
+    1300 uses
+    1400 uses
+    1500 uses
+    1600 uses
+    1700 uses
+    1800 uses
+    1900 uses
+    2000 uses
+    2100 uses
+    2200 uses
+    2300 uses
+    2400 uses
+    2500 uses
+    2600 uses
+    2700 uses
+    2800 uses
+    2900 uses
+    3000 uses
+    3100 uses
+    3200 uses
+    3300 uses
+    3400 uses
+    3500 uses
+    3600 uses
+    3700 uses
+    3800 uses
+    3900 uses
+    4000 uses
+    4100 uses
+    4200 uses
+    4300 uses
+    4400 uses
+    4500 uses
+    4600 uses
+    4700 uses
+    4800 uses
+    4900 uses
+    5000 uses
+    5100 uses
+    5200 uses
+    5300 uses
+    5400 uses
+    5500 uses
+    5600 uses
+    5700 uses
+    5800 uses
+    5900 uses
+    6000 uses
+    6100 uses
+    6200 uses
+    6300 uses
+    6400 uses
+    6500 uses
+    6600 uses
+    6700 uses
+    6800 uses
+    6900 uses
+    7000 uses
+    7100 uses
+    7200 uses
+Reading "cbx_1__2_".
+    100 uses
+    200 uses
+    300 uses
+    400 uses
+    500 uses
+    600 uses
+    700 uses
+    800 uses
+    900 uses
+    1000 uses
+    1100 uses
+    1200 uses
+    1300 uses
+    1400 uses
+    1500 uses
+    1600 uses
+    1700 uses
+    1800 uses
+    1900 uses
+    2000 uses
+    2100 uses
+    2200 uses
+    2300 uses
+    2400 uses
+    2500 uses
+    2600 uses
+    2700 uses
+    2800 uses
+    2900 uses
+    3000 uses
+    3100 uses
+    3200 uses
+    3300 uses
+    3400 uses
+    3500 uses
+    3600 uses
+    3700 uses
+    3800 uses
+    3900 uses
+    4000 uses
+    4100 uses
+    4200 uses
+    4300 uses
+    4400 uses
+    4500 uses
+    4600 uses
+    4700 uses
+    4800 uses
+    4900 uses
+    5000 uses
+    5100 uses
+    5200 uses
+    5300 uses
+    5400 uses
+    5500 uses
+    5600 uses
+    5700 uses
+    5800 uses
+    5900 uses
+    6000 uses
+    6100 uses
+    6200 uses
+    6300 uses
+    6400 uses
+    6500 uses
+    6600 uses
+    6700 uses
+    6800 uses
+    6900 uses
+    7000 uses
+    7100 uses
+    7200 uses
+    7300 uses
+    7400 uses
+    7500 uses
+Reading "cby_0__1_".
+    100 uses
+    200 uses
+    300 uses
+    400 uses
+    500 uses
+    600 uses
+    700 uses
+    800 uses
+    900 uses
+    1000 uses
+    1100 uses
+    1200 uses
+    1300 uses
+    1400 uses
+    1500 uses
+    1600 uses
+    1700 uses
+    1800 uses
+    1900 uses
+    2000 uses
+    2100 uses
+    2200 uses
+Reading "cby_1__1_".
+    100 uses
+    200 uses
+    300 uses
+    400 uses
+    500 uses
+    600 uses
+    700 uses
+    800 uses
+    900 uses
+    1000 uses
+    1100 uses
+    1200 uses
+    1300 uses
+    1400 uses
+    1500 uses
+    1600 uses
+    1700 uses
+    1800 uses
+    1900 uses
+    2000 uses
+    2100 uses
+    2200 uses
+    2300 uses
+    2400 uses
+    2500 uses
+    2600 uses
+    2700 uses
+    2800 uses
+    2900 uses
+    3000 uses
+    3100 uses
+    3200 uses
+    3300 uses
+    3400 uses
+    3500 uses
+    3600 uses
+    3700 uses
+    3800 uses
+    3900 uses
+    4000 uses
+    4100 uses
+    4200 uses
+    4300 uses
+    4400 uses
+    4500 uses
+    4600 uses
+    4700 uses
+    4800 uses
+    4900 uses
+    5000 uses
+    5100 uses
+    5200 uses
+    5300 uses
+    5400 uses
+    5500 uses
+    5600 uses
+    5700 uses
+    5800 uses
+    5900 uses
+    6000 uses
+    6100 uses
+    6200 uses
+    6300 uses
+    6400 uses
+    6500 uses
+    6600 uses
+    6700 uses
+    6800 uses
+    6900 uses
+    7000 uses
+Reading "cby_2__1_".
+    100 uses
+    200 uses
+    300 uses
+    400 uses
+    500 uses
+    600 uses
+    700 uses
+    800 uses
+    900 uses
+    1000 uses
+    1100 uses
+    1200 uses
+    1300 uses
+    1400 uses
+    1500 uses
+    1600 uses
+    1700 uses
+    1800 uses
+    1900 uses
+    2000 uses
+    2100 uses
+    2200 uses
+    2300 uses
+    2400 uses
+    2500 uses
+    2600 uses
+    2700 uses
+    2800 uses
+    2900 uses
+    3000 uses
+    3100 uses
+    3200 uses
+    3300 uses
+    3400 uses
+    3500 uses
+    3600 uses
+    3700 uses
+    3800 uses
+    3900 uses
+    4000 uses
+    4100 uses
+    4200 uses
+    4300 uses
+    4400 uses
+    4500 uses
+    4600 uses
+    4700 uses
+    4800 uses
+    4900 uses
+    5000 uses
+    5100 uses
+    5200 uses
+    5300 uses
+    5400 uses
+    5500 uses
+    5600 uses
+    5700 uses
+    5800 uses
+    5900 uses
+    6000 uses
+    6100 uses
+    6200 uses
+    6300 uses
+    6400 uses
+    6500 uses
+    6600 uses
+    6700 uses
+    6800 uses
+    6900 uses
+    7000 uses
+    7100 uses
+    7200 uses
+    7300 uses
+    7400 uses
 Reading "$$M2M3_PR_C".
 Reading "$$M4M5_PR_16000_16000_2_7".
 Reading "$$M4M5_PR_16000_16000_1_7".
@@ -1411,6 +1380,7 @@ Reading "$$M4M5_PR_16000_16000_8_7".
 Reading "$$M3M4_PR_4000_4000_1_7".
 Reading "$$M2M3_PR_4000_4000_1_7".
 Reading "$$M1M2_PR_3200_3200_1_9".
+Reading "sky130_fd_sc_hd__tapvpwrvgnd_1".
 Reading "fpga_top".
     100 uses
     200 uses
@@ -4839,337 +4809,286 @@ Reading "fpga_top".
     342500 uses
     342600 uses
     342700 uses
-Reading "sky130_fd_sc_hd__diode_2".
-Error while reading cell "sky130_fd_sc_hd__diode_2" (byte position 32351448): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__clkbuf_16".
-Error while reading cell "sky130_fd_sc_hd__clkbuf_16" (byte position 32354942): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__or4_4".
-Error while reading cell "sky130_fd_sc_hd__or4_4" (byte position 32367674): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__a32o_4".
-Error while reading cell "sky130_fd_sc_hd__a32o_4" (byte position 32374982): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__a21o_4".
-Error while reading cell "sky130_fd_sc_hd__a21o_4" (byte position 32387180): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__o21ai_4".
-Error while reading cell "sky130_fd_sc_hd__o21ai_4" (byte position 32395406): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__o22a_4".
-Error while reading cell "sky130_fd_sc_hd__o22a_4" (byte position 32403522): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__a211o_4".
-Error while reading cell "sky130_fd_sc_hd__a211o_4" (byte position 32413210): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__a2bb2o_4".
-Error while reading cell "sky130_fd_sc_hd__a2bb2o_4" (byte position 32422334): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__a21bo_4".
-Error while reading cell "sky130_fd_sc_hd__a21bo_4" (byte position 32433800): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__nor2_4".
-Error while reading cell "sky130_fd_sc_hd__nor2_4" (byte position 32442110): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__and3_4".
-Error while reading cell "sky130_fd_sc_hd__and3_4" (byte position 32449218): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__dfxtp_4".
-Error while reading cell "sky130_fd_sc_hd__dfxtp_4" (byte position 32456116): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__nand2_4".
-Error while reading cell "sky130_fd_sc_hd__nand2_4" (byte position 32470278): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__or3_4".
-Error while reading cell "sky130_fd_sc_hd__or3_4" (byte position 32477920): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__and2_4".
-Error while reading cell "sky130_fd_sc_hd__and2_4" (byte position 32485040): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__or2_4".
-Error while reading cell "sky130_fd_sc_hd__or2_4" (byte position 32490786): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__decap_8".
-Error while reading cell "sky130_fd_sc_hd__decap_8" (byte position 32496550): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__decap_6".
-Error while reading cell "sky130_fd_sc_hd__decap_6" (byte position 32500082): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__decap_12".
-Error while reading cell "sky130_fd_sc_hd__decap_12" (byte position 32503232): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__decap_4".
-Error while reading cell "sky130_fd_sc_hd__decap_4" (byte position 32507372): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "sky130_fd_sc_hd__decap_3".
-Error while reading cell "sky130_fd_sc_hd__decap_3" (byte position 32510168): Unknown layer/datatype in boundary, layer=236 type=0
-Reading "user_proj_example".
-    100 uses
-    200 uses
-    300 uses
-    400 uses
-    500 uses
-    600 uses
-    700 uses
-    800 uses
-    900 uses
-    1000 uses
-    1100 uses
-    1200 uses
-    1300 uses
-    1400 uses
-    1500 uses
-    1600 uses
-    1700 uses
-    1800 uses
-    1900 uses
-    2000 uses
-    2100 uses
-    2200 uses
-    2300 uses
-    2400 uses
-    2500 uses
-    2600 uses
-    2700 uses
-    2800 uses
-    2900 uses
-    3000 uses
-    3100 uses
-    3200 uses
-    3300 uses
-    3400 uses
-    3500 uses
-    3600 uses
-    3700 uses
-    3800 uses
-    3900 uses
-    4000 uses
-    4100 uses
-    4200 uses
-    4300 uses
-    4400 uses
-    4500 uses
-    4600 uses
-    4700 uses
-    4800 uses
-    4900 uses
-    5000 uses
-    5100 uses
-    5200 uses
-    5300 uses
-    5400 uses
-    5500 uses
-    5600 uses
-    5700 uses
-    5800 uses
-    5900 uses
-    6000 uses
-    6100 uses
-    6200 uses
-    6300 uses
-    6400 uses
-    6500 uses
-    6600 uses
-    6700 uses
-    6800 uses
-    6900 uses
-    7000 uses
-    7100 uses
-    7200 uses
-    7300 uses
-    7400 uses
-    7500 uses
-    7600 uses
-    7700 uses
-    7800 uses
-    7900 uses
-    8000 uses
-    8100 uses
-    8200 uses
-    8300 uses
-    8400 uses
-    8500 uses
-    8600 uses
-    8700 uses
-    8800 uses
-    8900 uses
-    9000 uses
-    9100 uses
-    9200 uses
-    9300 uses
-    9400 uses
-    9500 uses
-    9600 uses
-    9700 uses
-    9800 uses
-    9900 uses
-    10000 uses
-    10100 uses
-    10200 uses
-    10300 uses
-    10400 uses
-    10500 uses
-    10600 uses
-    10700 uses
-    10800 uses
-    10900 uses
-    11000 uses
-    11100 uses
-    11200 uses
-    11300 uses
-    11400 uses
-    11500 uses
-    11600 uses
-    11700 uses
-    11800 uses
-    11900 uses
-    12000 uses
-    12100 uses
-    12200 uses
-    12300 uses
-    12400 uses
-    12500 uses
-    12600 uses
-    12700 uses
-    12800 uses
-    12900 uses
-    13000 uses
-    13100 uses
-    13200 uses
-    13300 uses
-    13400 uses
-    13500 uses
-    13600 uses
-    13700 uses
-    13800 uses
-    13900 uses
-    14000 uses
-    14100 uses
-    14200 uses
-    14300 uses
-    14400 uses
-    14500 uses
-    14600 uses
-    14700 uses
-    14800 uses
-    14900 uses
-    15000 uses
-    15100 uses
-    15200 uses
-    15300 uses
-    15400 uses
-    15500 uses
-    15600 uses
-    15700 uses
-    15800 uses
-    15900 uses
-    16000 uses
-    16100 uses
-    16200 uses
-    16300 uses
-    16400 uses
-    16500 uses
-    16600 uses
-    16700 uses
-    16800 uses
-    16900 uses
-    17000 uses
-    17100 uses
-    17200 uses
-    17300 uses
-    17400 uses
-    17500 uses
-    17600 uses
-    17700 uses
-    17800 uses
-    17900 uses
-    18000 uses
-    18100 uses
-    18200 uses
-    18300 uses
-    18400 uses
-    18500 uses
-    18600 uses
-    18700 uses
-    18800 uses
-    18900 uses
-    19000 uses
-    19100 uses
-    19200 uses
-    19300 uses
-    19400 uses
-    19500 uses
-    19600 uses
-    19700 uses
-    19800 uses
-    19900 uses
-    20000 uses
-    20100 uses
-    20200 uses
-    20300 uses
-    20400 uses
-    20500 uses
-    20600 uses
-    20700 uses
-    20800 uses
-    20900 uses
-    21000 uses
-    21100 uses
-    21200 uses
-    21300 uses
-    21400 uses
-    21500 uses
-    21600 uses
-    21700 uses
-    21800 uses
-    21900 uses
-    22000 uses
-    22100 uses
-    22200 uses
-    22300 uses
-    22400 uses
-    22500 uses
-    22600 uses
-    22700 uses
-    22800 uses
-    22900 uses
-    23000 uses
-    23100 uses
-    23200 uses
-    23300 uses
-    23400 uses
-    23500 uses
-    23600 uses
-    23700 uses
-    23800 uses
-    23900 uses
-    24000 uses
-    24100 uses
-    24200 uses
-    24300 uses
-    24400 uses
-    24500 uses
-    24600 uses
-    24700 uses
-    24800 uses
-    24900 uses
-    25000 uses
-    25100 uses
-    25200 uses
-    25300 uses
-    25400 uses
-    25500 uses
-    25600 uses
-    25700 uses
-    25800 uses
-    25900 uses
-    26000 uses
-    26100 uses
-    26200 uses
-    26300 uses
-    26400 uses
-    26500 uses
-    26600 uses
-    26700 uses
-    26800 uses
-    26900 uses
-    27000 uses
-    27100 uses
-    27200 uses
-    27300 uses
-    27400 uses
-    27500 uses
-    27600 uses
-    27700 uses
-    27800 uses
-    27900 uses
-    28000 uses
 Reading "user_project_wrapper".
+Warning:  cell user_project_wrapper already existed before reading GDS!
+Using pre-existing cell definition
+user_project_wrapper: 10000 rects
+user_project_wrapper: 20000 rects
+user_project_wrapper: 30000 rects
+user_project_wrapper: 40000 rects
+user_project_wrapper: 50000 rects
+user_project_wrapper: 60000 rects
+user_project_wrapper: 70000 rects
+user_project_wrapper: 80000 rects
+user_project_wrapper: 90000 rects
+user_project_wrapper: 100000 rects
+user_project_wrapper: 110000 rects
+user_project_wrapper: 120000 rects
+user_project_wrapper: 130000 rects
+user_project_wrapper: 140000 rects
+user_project_wrapper: 150000 rects
+user_project_wrapper: 160000 rects
+user_project_wrapper: 170000 rects
+user_project_wrapper: 180000 rects
+user_project_wrapper: 190000 rects
+user_project_wrapper: 200000 rects
+user_project_wrapper: 210000 rects
+user_project_wrapper: 220000 rects
+user_project_wrapper: 230000 rects
+user_project_wrapper: 240000 rects
+user_project_wrapper: 250000 rects
+user_project_wrapper: 260000 rects
+user_project_wrapper: 270000 rects
+user_project_wrapper: 280000 rects
+user_project_wrapper: 290000 rects
+user_project_wrapper: 300000 rects
+user_project_wrapper: 310000 rects
+user_project_wrapper: 320000 rects
+user_project_wrapper: 330000 rects
+user_project_wrapper: 340000 rects
+user_project_wrapper: 350000 rects
+user_project_wrapper: 360000 rects
+user_project_wrapper: 370000 rects
+user_project_wrapper: 380000 rects
+user_project_wrapper: 390000 rects
+user_project_wrapper: 400000 rects
+user_project_wrapper: 410000 rects
+user_project_wrapper: 420000 rects
+user_project_wrapper: 430000 rects
+user_project_wrapper: 440000 rects
+user_project_wrapper: 450000 rects
+user_project_wrapper: 460000 rects
+user_project_wrapper: 470000 rects
+user_project_wrapper: 480000 rects
+user_project_wrapper: 490000 rects
+user_project_wrapper: 500000 rects
+user_project_wrapper: 510000 rects
+user_project_wrapper: 520000 rects
+user_project_wrapper: 530000 rects
+user_project_wrapper: 540000 rects
+user_project_wrapper: 550000 rects
+user_project_wrapper: 560000 rects
+user_project_wrapper: 570000 rects
+user_project_wrapper: 580000 rects
+user_project_wrapper: 590000 rects
+user_project_wrapper: 600000 rects
+user_project_wrapper: 610000 rects
+user_project_wrapper: 620000 rects
+user_project_wrapper: 630000 rects
+user_project_wrapper: 640000 rects
+user_project_wrapper: 650000 rects
+user_project_wrapper: 660000 rects
+user_project_wrapper: 670000 rects
+user_project_wrapper: 680000 rects
+user_project_wrapper: 690000 rects
+user_project_wrapper: 700000 rects
+user_project_wrapper: 710000 rects
+user_project_wrapper: 720000 rects
+user_project_wrapper: 730000 rects
+user_project_wrapper: 740000 rects
+user_project_wrapper: 750000 rects
+user_project_wrapper: 760000 rects
+user_project_wrapper: 770000 rects
+user_project_wrapper: 780000 rects
+user_project_wrapper: 790000 rects
+user_project_wrapper: 800000 rects
+user_project_wrapper: 810000 rects
+user_project_wrapper: 820000 rects
+user_project_wrapper: 830000 rects
+user_project_wrapper: 840000 rects
+user_project_wrapper: 850000 rects
+user_project_wrapper: 860000 rects
+user_project_wrapper: 870000 rects
+user_project_wrapper: 880000 rects
+user_project_wrapper: 890000 rects
+user_project_wrapper: 900000 rects
+user_project_wrapper: 910000 rects
+user_project_wrapper: 920000 rects
+user_project_wrapper: 930000 rects
+user_project_wrapper: 940000 rects
+user_project_wrapper: 950000 rects
+user_project_wrapper: 960000 rects
+user_project_wrapper: 970000 rects
+user_project_wrapper: 980000 rects
+user_project_wrapper: 990000 rects
+user_project_wrapper: 1000000 rects
+user_project_wrapper: 1010000 rects
+user_project_wrapper: 1020000 rects
+user_project_wrapper: 1030000 rects
+user_project_wrapper: 1040000 rects
+user_project_wrapper: 1050000 rects
+user_project_wrapper: 1060000 rects
+user_project_wrapper: 1070000 rects
+user_project_wrapper: 1080000 rects
+user_project_wrapper: 1090000 rects
+user_project_wrapper: 1100000 rects
+user_project_wrapper: 1110000 rects
+user_project_wrapper: 1120000 rects
+user_project_wrapper: 1130000 rects
+user_project_wrapper: 1140000 rects
+user_project_wrapper: 1150000 rects
+user_project_wrapper: 1160000 rects
+user_project_wrapper: 1170000 rects
+user_project_wrapper: 1180000 rects
+user_project_wrapper: 1190000 rects
+user_project_wrapper: 1200000 rects
+user_project_wrapper: 1210000 rects
+user_project_wrapper: 1220000 rects
+user_project_wrapper: 1230000 rects
+user_project_wrapper: 1240000 rects
+user_project_wrapper: 1250000 rects
+user_project_wrapper: 1260000 rects
+user_project_wrapper: 1270000 rects
+user_project_wrapper: 1280000 rects
+user_project_wrapper: 1290000 rects
+user_project_wrapper: 1300000 rects
+user_project_wrapper: 1310000 rects
+user_project_wrapper: 1320000 rects
+user_project_wrapper: 1330000 rects
+user_project_wrapper: 1340000 rects
+user_project_wrapper: 1350000 rects
+user_project_wrapper: 1360000 rects
+user_project_wrapper: 1370000 rects
+user_project_wrapper: 1380000 rects
+user_project_wrapper: 1390000 rects
+user_project_wrapper: 1400000 rects
+user_project_wrapper: 1410000 rects
+user_project_wrapper: 1420000 rects
+user_project_wrapper: 1430000 rects
+user_project_wrapper: 1440000 rects
+user_project_wrapper: 1450000 rects
+user_project_wrapper: 1460000 rects
+user_project_wrapper: 1470000 rects
+user_project_wrapper: 1480000 rects
+user_project_wrapper: 1490000 rects
+user_project_wrapper: 1500000 rects
+user_project_wrapper: 1510000 rects
+user_project_wrapper: 1520000 rects
+user_project_wrapper: 1530000 rects
+user_project_wrapper: 1540000 rects
+user_project_wrapper: 1550000 rects
+user_project_wrapper: 1560000 rects
+user_project_wrapper: 1570000 rects
+user_project_wrapper: 1580000 rects
+user_project_wrapper: 1590000 rects
+user_project_wrapper: 1600000 rects
+user_project_wrapper: 1610000 rects
+user_project_wrapper: 1620000 rects
+user_project_wrapper: 1630000 rects
+user_project_wrapper: 1640000 rects
+user_project_wrapper: 1650000 rects
+user_project_wrapper: 1660000 rects
+user_project_wrapper: 1670000 rects
+user_project_wrapper: 1680000 rects
+user_project_wrapper: 1690000 rects
+user_project_wrapper: 1700000 rects
+user_project_wrapper: 1710000 rects
+user_project_wrapper: 1720000 rects
+user_project_wrapper: 1730000 rects
+user_project_wrapper: 1740000 rects
+user_project_wrapper: 1750000 rects
+user_project_wrapper: 1760000 rects
+user_project_wrapper: 1770000 rects
+user_project_wrapper: 1780000 rects
+user_project_wrapper: 1790000 rects
+user_project_wrapper: 1800000 rects
+user_project_wrapper: 1810000 rects
+user_project_wrapper: 1820000 rects
+user_project_wrapper: 1830000 rects
+user_project_wrapper: 1840000 rects
+user_project_wrapper: 1850000 rects
+user_project_wrapper: 1860000 rects
+user_project_wrapper: 1870000 rects
+user_project_wrapper: 1880000 rects
+user_project_wrapper: 1890000 rects
+user_project_wrapper: 1900000 rects
+user_project_wrapper: 1910000 rects
+user_project_wrapper: 1920000 rects
+user_project_wrapper: 1930000 rects
+user_project_wrapper: 1940000 rects
+user_project_wrapper: 1950000 rects
+user_project_wrapper: 1960000 rects
+user_project_wrapper: 1970000 rects
+user_project_wrapper: 1980000 rects
+user_project_wrapper: 1990000 rects
+user_project_wrapper: 2000000 rects
+user_project_wrapper: 2010000 rects
+user_project_wrapper: 2020000 rects
+user_project_wrapper: 2030000 rects
+user_project_wrapper: 2040000 rects
+user_project_wrapper: 2050000 rects
+user_project_wrapper: 2060000 rects
+user_project_wrapper: 2070000 rects
+user_project_wrapper: 2080000 rects
+user_project_wrapper: 2090000 rects
+user_project_wrapper: 2100000 rects
+user_project_wrapper: 2110000 rects
+user_project_wrapper: 2120000 rects
+user_project_wrapper: 2130000 rects
+user_project_wrapper: 2140000 rects
+user_project_wrapper: 2150000 rects
+user_project_wrapper: 2160000 rects
+user_project_wrapper: 2170000 rects
+user_project_wrapper: 2180000 rects
+user_project_wrapper: 2190000 rects
+user_project_wrapper: 2200000 rects
+user_project_wrapper: 2210000 rects
+user_project_wrapper: 2220000 rects
+user_project_wrapper: 2230000 rects
+user_project_wrapper: 2240000 rects
+user_project_wrapper: 2250000 rects
+user_project_wrapper: 2260000 rects
+user_project_wrapper: 2270000 rects
+user_project_wrapper: 2280000 rects
+user_project_wrapper: 2290000 rects
+user_project_wrapper: 2300000 rects
+user_project_wrapper: 2310000 rects
+user_project_wrapper: 2320000 rects
+user_project_wrapper: 2330000 rects
+user_project_wrapper: 2340000 rects
+user_project_wrapper: 2350000 rects
+user_project_wrapper: 2360000 rects
+user_project_wrapper: 2370000 rects
+user_project_wrapper: 2380000 rects
+user_project_wrapper: 2390000 rects
+user_project_wrapper: 2400000 rects
+user_project_wrapper: 2410000 rects
+user_project_wrapper: 2420000 rects
+user_project_wrapper: 2430000 rects
+user_project_wrapper: 2440000 rects
+user_project_wrapper: 2450000 rects
+user_project_wrapper: 2460000 rects
+user_project_wrapper: 2470000 rects
+user_project_wrapper: 2480000 rects
+user_project_wrapper: 2490000 rects
+user_project_wrapper: 2500000 rects
+user_project_wrapper: 2510000 rects
+user_project_wrapper: 2520000 rects
+user_project_wrapper: 2530000 rects
+user_project_wrapper: 2540000 rects
+user_project_wrapper: 2550000 rects
+user_project_wrapper: 2560000 rects
+user_project_wrapper: 2570000 rects
+user_project_wrapper: 2580000 rects
+user_project_wrapper: 2590000 rects
+user_project_wrapper: 2600000 rects
+user_project_wrapper: 2610000 rects
+Processing timestamp mismatches: user_project_wrapper.
 chip_io: 10000 rects
-Processing timestamp mismatches: chip_io, mgmt_protect, user_id_programming, storage, mgmt_core, sky130_fd_sc_hvl__lsbufhv2lv_1_wrapped, simple_por, gpio_control_block.
+user_proj_example: 10000 rects
+user_proj_example: 20000 rects
+user_proj_example: 30000 rects
+user_proj_example: 40000 rects
+user_proj_example: 50000 rects
+user_proj_example: 60000 rects
+user_proj_example: 70000 rects
+user_proj_example: 80000 rects
+user_proj_example: 90000 rects
+user_proj_example: 100000 rects
+Processing timestamp mismatches: sky130_fd_sc_hd__diode_2, sky130_fd_sc_hd__clkbuf_16, sky130_fd_sc_hd__or4_4, sky130_fd_sc_hd__a32o_4, sky130_fd_sc_hd__a21o_4, sky130_fd_sc_hd__o21ai_4, sky130_fd_sc_hd__o22a_4, sky130_fd_sc_hd__a211o_4, sky130_fd_sc_hd__a2bb2o_4, sky130_fd_sc_hd__a21bo_4, sky130_fd_sc_hd__nor2_4, sky130_fd_sc_hd__and3_4, sky130_fd_sc_hd__dfxtp_4, sky130_fd_sc_hd__nand2_4, sky130_fd_sc_hd__or3_4, sky130_fd_sc_hd__and2_4, sky130_fd_sc_hd__or2_4, sky130_fd_sc_hd__decap_8, sky130_fd_sc_hd__decap_6, sky130_fd_sc_hd__decap_12, sky130_fd_sc_hd__decap_4, sky130_fd_sc_hd__decap_3, user_proj_example, sky130_fd_sc_hd__fill_1, sky130_fd_sc_hd__tapvpwrvgnd_1, sky130_fd_sc_hd__fill_2, sky130_fd_sc_hd__conb_1, sky130_fd_sc_hd__buf_2, sky130_fd_sc_hd__inv_2, sky130_fd_sc_hd__clkbuf_1, sky130_fd_sc_hd__buf_4, chip_io, mgmt_protect, user_id_programming, storage, mgmt_core, sky130_fd_sc_hvl__lsbufhv2lv_1_wrapped, simple_por, gpio_control_block.
 DRC style is now "drc(full)"
 Loading DRC CIF style.
-[INFO]: COUNT: 815065
+[INFO]: COUNT: 75
 [INFO]: Should be divided by 3 or 4
 [INFO]: DRC Checking DONE (/usr/local/workspace/Caravel-SOFA-CHD/checks/caravel.magic.drc)
 [INFO]: Saving mag view with DRC errors(/usr/local/workspace/Caravel-SOFA-CHD/checks/caravel.magic.drc.mag)

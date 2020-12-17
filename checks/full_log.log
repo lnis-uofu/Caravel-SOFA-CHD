@@ -5,8 +5,8 @@ Step 0 done without fatal errors.
 {{LICENSE COMPLIANCE PASSED}} Apache-2.0 LICENSE file was found in project root
  No third party libraries found.
 Step 1 done without fatal errors.
-{{SPDX COMPLIANCE WARNING}} Found 46 non-compliant files with the SPDX Standard. Check full log for more information
-SPDX COMPLIANCE: NON-COMPLIANT FILES PREVIEW: ['/usr/local/workspace/Caravel-SOFA-CHD/README.md', '/usr/local/workspace/Caravel-SOFA-CHD/doc/caravel_datasheet.ps', '/usr/local/workspace/Caravel-SOFA-CHD/mag/clamp_list.txt', '/usr/local/workspace/Caravel-SOFA-CHD/openlane/chip_dimensions.txt', '/usr/local/workspace/Caravel-SOFA-CHD/openlane/mgmt_protect/pdn.tcl', '/usr/local/workspace/Caravel-SOFA-CHD/spi/lvs/DFFRAM.spice', '/usr/local/workspace/Caravel-SOFA-CHD/spi/lvs/chip_io.spice', '/usr/local/workspace/Caravel-SOFA-CHD/spi/lvs/digital_pll.spice', '/usr/local/workspace/Caravel-SOFA-CHD/spi/lvs/gpio_control_block.spice', '/usr/local/workspace/Caravel-SOFA-CHD/spi/lvs/simple_por.spice', '/usr/local/workspace/Caravel-SOFA-CHD/spi/lvs/storage.spice', '/usr/local/workspace/Caravel-SOFA-CHD/spi/lvs/user_id_programming.spice', '/usr/local/workspace/Caravel-SOFA-CHD/spi/lvs/mgmt_core.spice', '/usr/local/workspace/Caravel-SOFA-CHD/spi/lvs/mgmt_protect.spice', '/usr/local/workspace/Caravel-SOFA-CHD/spi/lvs/mgmt_protect_hv.spice', '/usr/local/workspace/Caravel-SOFA-CHD/spi/lvs/mprj2_logic_high.spice', '/usr/local/workspace/Caravel-SOFA-CHD/spi/lvs/mprj_logic_high.spice', '/usr/local/workspace/Caravel-SOFA-CHD/spi/lvs/sky130_fd_sc_hvl__lsbufhv2lv_1_wrapped.spice', '/usr/local/workspace/Caravel-SOFA-CHD/spi/lvs/user_proj_example.spice', '/usr/local/workspace/Caravel-SOFA-CHD/spi/lvs/user_project_wrapper.spice']
+{{SPDX COMPLIANCE WARNING}} Found 120 non-compliant files with the SPDX Standard. Check full log for more information
+SPDX COMPLIANCE: NON-COMPLIANT FILES PREVIEW: ['/usr/local/workspace/Caravel-SOFA-CHD/README.md', '/usr/local/workspace/Caravel-SOFA-CHD/source_commit_hash.txt', '/usr/local/workspace/Caravel-SOFA-CHD/doc/caravel_datasheet.ps', '/usr/local/workspace/Caravel-SOFA-CHD/mag/clamp_list.txt', '/usr/local/workspace/Caravel-SOFA-CHD/openlane/chip_dimensions.txt', '/usr/local/workspace/Caravel-SOFA-CHD/openlane/mgmt_protect/pdn.tcl', '/usr/local/workspace/Caravel-SOFA-CHD/spi/lvs/DFFRAM.spice', '/usr/local/workspace/Caravel-SOFA-CHD/spi/lvs/chip_io.spice', '/usr/local/workspace/Caravel-SOFA-CHD/spi/lvs/digital_pll.spice', '/usr/local/workspace/Caravel-SOFA-CHD/spi/lvs/gpio_control_block.spice', '/usr/local/workspace/Caravel-SOFA-CHD/spi/lvs/simple_por.spice', '/usr/local/workspace/Caravel-SOFA-CHD/spi/lvs/storage.spice', '/usr/local/workspace/Caravel-SOFA-CHD/spi/lvs/user_id_programming.spice', '/usr/local/workspace/Caravel-SOFA-CHD/spi/lvs/mgmt_core.spice', '/usr/local/workspace/Caravel-SOFA-CHD/spi/lvs/mgmt_protect.spice', '/usr/local/workspace/Caravel-SOFA-CHD/spi/lvs/mgmt_protect_hv.spice', '/usr/local/workspace/Caravel-SOFA-CHD/spi/lvs/mprj2_logic_high.spice', '/usr/local/workspace/Caravel-SOFA-CHD/spi/lvs/mprj_logic_high.spice', '/usr/local/workspace/Caravel-SOFA-CHD/spi/lvs/sky130_fd_sc_hvl__lsbufhv2lv_1_wrapped.spice', '/usr/local/workspace/Caravel-SOFA-CHD/spi/lvs/user_proj_example.spice']
  Executing Step 2 of 4: Checking YAML description.
  YAML file valid!
 Step 2 done without fatal errors.
@@ -44,33 +44,13 @@ toplevel cell type differences:
  Consistency Checks Failed+ Reason: GDS Checks Failed: Hierarchy Matching Failed
  Executing Step 4 of 4: Checking DRC Violations.
  Running DRC Checks...
-Violation Message "mcon.spacing < 0.19um (mcon.2) "found 14 Times.
-Violation Message "Local interconnect spacing < 0.17um (li.3) "found 3443 Times.
-Violation Message "via4.width < 1.18um (via4.1 + 2 * via4.4) "found 142 Times.
-Violation Message "Metal4 > 3um spacing to unrelated m4 < 0.4um (met4.5b) "found 13306 Times.
-Violation Message "Local interconnect width < 0.17um (li.1) "found 4 Times.
-Violation Message "Metal1 spacing < 0.14um (met1.2) "found 989 Times.
-Violation Message "This layer can't abut or partially overlap between subcells "found 39219 Times.
-Violation Message "Metal2 spacing < 0.14um (met2.2) "found 22360 Times.
-Violation Message "Metal3 > 3um spacing to unrelated m3 < 0.4um (met3.3d) "found 4 Times.
-Violation Message "Can't overlap those layers "found 4 Times.
-Violation Message "Min area of metal1 holes > 0.14um^2 (met1.7) "found 21 Times.
-Violation Message "Min area of metal2 holes > 0.14um^2 (met2.7) "found 29 Times.
-Violation Message "Metal3 spacing < 0.3um (met3.2) "found 39886 Times.
-Violation Message "Metal3 width < 0.3um (met3.1) "found 3 Times.
-Violation Message "Metal5 spacing < 1.6um (met5.2) "found 686 Times.
-Violation Message "Metal4 spacing < 0.3um (met4.2) "found 15917 Times.
-Violation Message "Via1 width < 0.26um (via.1a + 2 * via.4a) "found 12 Times.
-Violation Message "P-diff distance to N-tap must be < 15.0um (LU.3) "found 341619 Times.
-Violation Message "via2.spacing < 0.24um (via2.2 - 2 * via2.4) "found 5772 Times.
-Violation Message "via3.width < 0.32um (via3.1 + 2 * via3.4) "found 20 Times.
-Violation Message "Metal2 width < 0.14um (met2.1) "found 18 Times.
-Violation Message "via4.spacing < 0.42um (via4.2 - 2 * via4.4) "found 84 Times.
-Violation Message "via3.spacing < 0.08um (via3.2 - 2 * via3.4) "found 850 Times.
-Violation Message "N-diff distance to P-tap must be < 15.0um (LU.2) "found 330174 Times.
-Violation Message "via2.width < 0.28um (via2.1a + 2 * via2.4) "found 18 Times.
-Violation Message "Metal1 > 3um spacing to unrelated m1 < 0.28um (met1.3b) "found 19 Times.
-Violation Message "Metal2 > 3um spacing to unrelated m2 < 0.28um (met2.3b) "found 23 Times.
-Violation Message "Spacing of metal4 features attached to and within 0.40um of large metal4 < 0.4um (met4.5a) "found 485 Times.
- DRC Checks on MAG Failed, Reason: Total # of DRC violations is 815121
+Violation Message "Metal4 > 3um spacing to unrelated m4 < 0.4um (met4.5b) "found 6 Times.
+Violation Message "Metal3 > 3um spacing to unrelated m3 < 0.4um (met3.3d) "found 2 Times.
+Violation Message "Can't overlap those layers "found 2 Times.
+Violation Message "Min area of metal2 holes > 0.14um^2 (met2.7) "found 20 Times.
+Violation Message "Metal3 spacing < 0.3um (met3.2) "found 6 Times.
+Violation Message "Metal3 width < 0.3um (met3.1) "found 1 Times.
+Violation Message "Metal1 > 3um spacing to unrelated m1 < 0.28um (met1.3b) "found 17 Times.
+Violation Message "Metal2 > 3um spacing to unrelated m2 < 0.28um (met2.3b) "found 21 Times.
+ DRC Checks on MAG Failed, Reason: Total # of DRC violations is 75
 TEST FAILED AT STEP 4
