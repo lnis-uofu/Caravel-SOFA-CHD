@@ -12,7 +12,7 @@ Loading sky130A Device Generator Menu ...
 Loading "../SOFA-Chips/SCRIPT/merge_fpga_top.tcl" from command line.
 Warning: Calma reading is not undoable!  I hope that's OK.
 Library written using GDS-II Release 5.0
-Library name: fpga_top_icv_in_design.gdsgz.merge1097542523
+Library name: fpga_top_icv_in_design.gdsgz.merge566544152
 Reading "sky130_fd_sc_hd__a2111o_1".
 Reading "sky130_fd_sc_hd__a2111o_2".
 Reading "sky130_fd_sc_hd__a2111o_4".
