@@ -12,7 +12,7 @@ Loading sky130A Device Generator Menu ...
 Loading "../SOFA-Chips/SCRIPT/merge_fpga_top.tcl" from command line.
 Warning: Calma reading is not undoable!  I hope that's OK.
 Library written using GDS-II Release 5.0
-Library name: fpga_top_icv_in_design.gdsgz.merge566544152
+Library name: fpga_top_icv_in_design.gdsgz.merge1354503035
 Reading "sky130_fd_sc_hd__a2111o_1".
 Reading "sky130_fd_sc_hd__a2111o_2".
 Reading "sky130_fd_sc_hd__a2111o_4".
@@ -5189,17 +5189,17 @@ Processing timestamp mismatches: fpga_top.
    Writing cell $$M2M3_PR
    Writing cell $$M1M2_PR
    Writing cell $$M4M5_PR_16000_16000_2_1
-   Writing cell sky130_fd_sc_hd__fill_2
-   Writing cell sky130_fd_sc_hd__fill_8
    Writing cell sky130_fd_sc_hd__fill_4
+   Writing cell sky130_fd_sc_hd__fill_8
    Writing cell sky130_fd_sc_hd__fill_1
+   Writing cell sky130_fd_sc_hd__fill_2
    Writing cell sky130_fd_sc_hd__buf_1
    Writing cell sky130_fd_sc_hd__clkbuf_1
+   Writing cell sky130_fd_sc_hd__buf_2
    Writing cell sky130_fd_sc_hd__buf_6
    Writing cell sky130_fd_sc_hd__bufbuf_16
    Writing cell sky130_fd_sc_hd__buf_4
    Writing cell sky130_fd_sc_hd__buf_8
-   Writing cell sky130_fd_sc_hd__buf_2
    Writing cell sky130_fd_sc_hd__dfrtp_1
    Writing cell sky130_uuopenfpga_cc_hd_invmux3_1
    Writing cell sky130_fd_sc_hd__nor2_1
@@ -5208,9 +5208,9 @@ Processing timestamp mismatches: fpga_top.
    Writing cell sky130_fd_sc_hd__inv_1
    Writing cell sky130_fd_sc_hd__sdfrtp_1
    Writing cell sky130_fd_sc_hd__mux2_1
+   Writing cell sky130_fd_sc_hd__inv_2
    Writing cell sky130_fd_sc_hd__or2_0
    Writing cell sky130_fd_sc_hd__inv_8
-   Writing cell sky130_fd_sc_hd__inv_2
    Writing cell sky130_fd_sc_hd__dlygate4sd1_1
    Writing cell sky130_fd_sc_hd__dlygate4sd3_1
    Writing cell sky130_fd_sc_hd__clkbuf_8

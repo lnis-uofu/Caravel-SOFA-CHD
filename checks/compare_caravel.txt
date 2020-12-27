@@ -3,7 +3,7 @@
  .travisCI/travisBuild.sh                           |     28 -
  OpenFPGA_task/arch/fabric_key.xml                  |    678 +
  OpenFPGA_task/arch/openfpga_arch.xml               |    330 +
- OpenFPGA_task/arch/vpr_arch.xml                    |    737 +
+ OpenFPGA_task/arch/vpr_arch.xml                    |    739 +
  OpenFPGA_task/config/task.conf                     |     39 +
  OpenFPGA_task/config/task_generation.conf          |     39 +
  OpenFPGA_task/config/task_simulation.conf          |     33 +
@@ -26,42 +26,42 @@
  OpenFPGA_task/user_project_wrapper_empty.def       |   1219 +
  OpenFPGA_task/user_project_wrapper_template.def    |   3768 +
  README.md                                          |    158 +-
- checks/KlayoutMerge.log                            |      2 +
+ checks/KlayoutMerge.log                            |      1 +
  checks/caravel.magic.drc                           |    104 +
- checks/caravel.magic.drc.mag                       |  80938 ++++++++++
+ checks/caravel.magic.drc.mag                       |  80938 ++++++++
  checks/caravel.magic.namelist                      |      1 +
  checks/caravel.magic.rdb                           |     63 +
  checks/caravel.magic.typelist                      |      1 +
  checks/compare_caravel.txt                         |      0
- checks/full_log.log                                |     57 +
+ checks/full_log.log                                |     56 +
  checks/magic_drc.log                               |   5095 +
- checks/magic_extract.log                           |  20268 +++
+ checks/magic_extract.log                           |  10873 ++
  checks/magic_merge_user_project_wrapper.log        |   5250 +
  checks/manifest_check.mag.log                      |      2 +
  checks/manifest_check.maglef.log                   |     13 +
  checks/manifest_check.rtl.log                      |     37 +
  checks/mprj.magic.namelist                         |      1 +
  checks/mprj.magic.typelist                         |      1 +
- checks/spdx_compliance_report.log                  |    125 +
- gds/caravel.gds.gz                                 |    Bin 52991493 -> 59641419 bytes
+ checks/spdx_compliance_report.log                  |    123 +
+ gds/caravel.gds.gz                                 |    Bin 52991493 -> 57163768 bytes
  gds/user_proj_example.gds.gz                       |    Bin 742584 -> 0 bytes
- gds/user_project_wrapper.gds.gz                    |    Bin 6394035 -> 3561254 bytes
+ gds/user_project_wrapper.gds.gz                    |    Bin 6394035 -> 3559736 bytes
  gds/user_project_wrapper_empty.gds.gz              |    Bin 73084 -> 0 bytes
  info.yaml                                          |      6 +-
  mag/.magicrc                                       |     16 -
  qflow/digital_pll_controller/tech                  |      1 -
  qflow/ring_osc2x13/tech                            |      1 -
- source_commit_hash.txt                             |     14 +
+ source_commit_hash.txt                             |     17 +
  verilog/OpenFPGA_Verilog/InstancesMap.txt          |      1 +
  verilog/OpenFPGA_Verilog/define_simulation.v       |     18 +
  verilog/OpenFPGA_Verilog/fabric_netlists.v         |     72 +
- verilog/OpenFPGA_Verilog/fpga_core.v               |  49530 ++++++
+ verilog/OpenFPGA_Verilog/fpga_core.v               |  49530 +++++
  verilog/OpenFPGA_Verilog/fpga_defines.v            |     10 +
  verilog/OpenFPGA_Verilog/fpga_top.v                |  41442 +++++
  verilog/OpenFPGA_Verilog/lb/grid_clb.v             |    272 +
  .../lb/logical_tile_clb_mode_clb_.v                |    758 +
  .../lb/logical_tile_clb_mode_default__fle.v        |    173 +
- ...e_clb_mode_default__fle_mode_physical__fabric.v |    242 +
+ ...e_clb_mode_default__fle_mode_physical__fabric.v |    250 +
  ...t__fle_mode_physical__fabric_mode_default__ff.v |     61 +
  ...ode_physical__fabric_mode_default__frac_logic.v |    151 +
  ...ault__frac_logic_mode_default__carry_follower.v |     52 +
@@ -100,5 +100,6 @@
  .../sub_module/sky130_fd_sc_hd_wrapper.v           |     20 +
  verilog/OpenFPGA_Verilog/sub_module/wires.v        |     34 +
  verilog/OpenFPGA_Verilog/top_include_netlists.v    |     31 +
- verilog/gl/caravel_sofa_chd_top.v                  | 147104 ++++++++++++++++++
- 103 files changed, 377967 insertions(+), 268 deletions(-)
+ verilog/gl/caravel_sofa_chd_top.v                  | 173465 ++++++++++++++++++
+ verilog/gl/user_project_wrapper.v                  |    160 +-
+ 104 files changed, 395052 insertions(+), 318 deletions(-)
