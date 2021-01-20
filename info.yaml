@@ -7,7 +7,7 @@ project:
   organization_url: "http://efabless.com"
   owner: "Tim Edwards"
   process: "SKY130"
-  project_name: "Caravel"
+  project_name: "Caravel-SOFA-CHD"
   tags:
     - "Open MPW"
     - "Test Harness"
